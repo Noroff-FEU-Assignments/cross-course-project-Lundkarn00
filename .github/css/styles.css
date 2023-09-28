@@ -1,0 +1,21 @@
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    background-color: #f2d8ce;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #d6bdb4;
+    color: black
+}
