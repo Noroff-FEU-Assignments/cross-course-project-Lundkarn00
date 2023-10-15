@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gamehub for all your gaming needs">
   <link rel="stylesheet" href=".github/css/styles.css">
+  <script src="https://kit.fontawesome.com/b18cdd2ed6.js" crossorigin="anonymous"></script>
   <title>Gamehub | The Universe Of Games</title>
 </head>
 <body>
@@ -20,12 +21,12 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="explore">
       <h1>Welcome to Gamehub, explore our wide selection of games now!</h1>
       <a href="games.html" class="cta">Explore more</a>
-      <img src=".github/images/explore-more.jpg" alt="Hands on controllers">
+      <img src=".github/images/explore-more.jpg" alt="Hands on controllers" max-width="50%">
     </section>
-    <section>
+    <section class="trending">
       <h2>Trending</h2>
       <ul>
         <li>
@@ -41,6 +42,14 @@
           <img src=".github/images/assets/GameHub_covers4.jpg" alt="Furious">
         </li>
       </ul>
+    </section>
+    <section class="giveaway">
+      <h2>Weekly Giveaway</h2>
+      <p>Enter our weekly giveaway by subscribing to our newsletter for a chance to win some awesome games!</p>
+      <form action="submit.php" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <input type="submit" value="Subscribe">
+      </form>
     </section>
   </main>
 </body>

@@ -8,6 +8,22 @@ body {
     background-color: #f2d8ce;
 }
 
+.trending {
+    background-color: #d6bdb4;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.giveaway {
+    background-color: #d6bdb4;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
 .logo {
     float: left;
     padding: 10px;
