@@ -11,7 +11,7 @@
 <body>
   <header>
     <img src=".github/images/logo.png" alt="Gamehub logo" class="logo">
-    <nav>
+    <nav class="nav-bar">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="games.html">Games</a></li>
@@ -24,24 +24,17 @@
     <section class="explore">
       <h1>Welcome to Gamehub, explore our wide selection of games now!</h1>
       <a href="games.html" class="cta">Explore more</a>
-      <img src=".github/images/explore-more.jpg" alt="Hands on controllers" max-width="50%">
     </section>
     <section class="trending">
       <h2>Trending</h2>
-      <ul>
-        <li>
-          <img src=".github/images/assets/GameHub_covers.jpg" alt="Ping Pong">
-        </li>
-        <li>
-          <img src=".github/images/assets/GameHub_covers2.jpg" alt="Super Duper">
-        </li>
-        <li>
-          <img src=".github/images/assets/GameHub_covers3.jpg" alt="Black">
-        </li>
-        <li>
-          <img src=".github/images/assets/GameHub_covers4.jpg" alt="Furious">
-        </li>
-      </ul>
+      <div class="slideshow-container">
+        <img src=".github/images/assets/GameHub_covers.jpg" alt="Ping Pong" class="slide">
+        <img src=".github/images/assets/GameHub_covers2.jpg" alt="Super Duper" class="slide">
+        <img src=".github/images/assets/GameHub_covers3.jpg" alt="Black" class="slide">
+        <img src=".github/images/assets/GameHub_covers4.jpg" alt="Furious" class="slide">
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+      </div>
     </section>
     <section class="giveaway">
       <h2>Weekly Giveaway</h2>
