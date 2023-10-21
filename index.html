@@ -11,6 +11,8 @@
 <body>
   <header>
     <img src=".github/images/logo.png" alt="Gamehub logo" class="logo">
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="hamburger-icon"><i class="fas fa-bars"></i></label>
     <nav class="nav-bar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,8 +24,10 @@
   </header>
   <main>
     <section class="explore">
-      <h1>Welcome to Gamehub, explore our wide selection of games now!</h1>
-      <a href="games.html" class="cta">Explore more</a>
+      <div class="explore-container">
+        <h1>Welcome to Gamehub, explore our wide selection of games now!</h1>
+        <a href="games.html" class="explore-cta">Explore more</a>
+      </div>
     </section>
     <section class="trending">
       <h2>Trending</h2>
@@ -40,11 +44,19 @@
       <h2>Weekly Giveaway</h2>
       <p>Enter our weekly giveaway by subscribing to our newsletter for a chance to win some awesome games!</p>
       <form action="submit.php" method="POST">
-        <input type="email" name="email" placeholder="Enter your email address" required>
-        <input type="submit" value="Subscribe">
+        <input type="email" name="email" placeholder="Email:" required>
+        <input type="submit" value="Subscribe" class="giveaway-cta">
       </form>
     </section>
   </main>
 </body>
-<footer>Copyright &copy;</footer>
+<footer>
+  <section class="logo-adress">
+    <img src=".github/images/logo.png" alt="Gamehub logo" class="logo-footer">
+    <p>Gamehub Inc.</p>
+    <p>909 Tully street</p>
+    <p>48219 Detroit, MI</p>
+  </section>
+  <p>Copyright &copy;</p>
+</footer>
 </html>

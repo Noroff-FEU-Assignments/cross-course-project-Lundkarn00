@@ -26,15 +26,37 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url(..fonts/Rubik/static/Rubik-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: medium;
+}
+
 header {
     background-color: #f2d8ce;
     color: #fff;
     text-align: center;
-}
+    position: relative;
+    margin-bottom: -10px;
+}   
+    .hamburger-icon {
+       color: #000000;
+        }
+
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked + .nav-bar {
+    display: block;
 }
 
 .nav-bar {
@@ -46,6 +68,9 @@ img {
     margin: 0px;
     display: flex;
     font-family: 'Rubik', sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 30px;
 }
 
 .nav-bar li {
@@ -58,6 +83,7 @@ img {
     text-decoration: none;
     color: #000000;
     font-size: 2rem;
+    display: inline-block;
 }
 
 .nav-bar a:hover {
@@ -71,9 +97,53 @@ body {
 }
 
 .explore {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.explore::before {
+    content: "";
+    position: absolute;
     background-image: url("../images/explore-more.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100% auto;
+    filter: brightness(40%);
+    color: #fff;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.explore h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.explore-cta {
+    background-color: #1b1919;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin-top: 225px;
+    margin-right: 170px;
+    opacity: 0.8;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.explore-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .trending {
@@ -122,15 +192,66 @@ body {
     text-align: center;
 }
 
+.giveaway-cta {
+    background-color: #453f3d;
+    color: #f9cccc;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    font: medium;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #453f3d;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #453f3d;
+}
+
 .logo {
     float: left;
-    padding: 10px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     max-width: 150px;
 }
 
+.logo-footer {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    max-width: 150px;
+    clear: both;
+}
+
+.logo-adress {
+    display: flex;
+    align-items: center;
+}
+
+.logo-adress p {
+    margin-left: 10px;
+    flex-direction: column;
+}
+
 footer {
-    background-color: #f2d8ce;
+    background-color: #d6bdb4;
     color: black
+}
+
+@media (min-width: 600px) {
+    .nav-bar {
+        display: block;
+        position: static;
+    }
+    .hamburger-icon {
+        display: none;
+        color: black;
+        z-index: 1;
+    }
 }
