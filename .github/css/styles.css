@@ -33,6 +33,10 @@
     font-style: medium;
 }
 
+html, body {
+    width: 100%;
+}
+
 header {
     background-color: #f2d8ce;
     color: #fff;
@@ -94,6 +98,7 @@ img {
 body {
     font-family: 'Rubik', sans-serif;
     background-color: #f2d8ce;
+    margin: 0;
 }
 
 .explore {
@@ -203,12 +208,86 @@ body {
     font-weight: bold;
 }
 
-input[type="email"] {
+.email-giveaway {
     width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid #453f3d;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #453f3d;
+}
+
+.about {
+    color: black;
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+
+.contact {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.contact-cta {
+    background-color: #453f3d;
+    color: #f9cccc;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    font: medium;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;   
+}
+
+.contact-form input {
+    flex: 1;
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #453f3d;
+}
+
+.contact-form textarea {
+    width: 25%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
     border-radius: 50px;
     background-color: #ffffff;
     color: #453f3d;
@@ -241,7 +320,9 @@ input[type="email"] {
 
 footer {
     background-color: #d6bdb4;
-    color: black
+    color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
 @media (min-width: 600px) {
