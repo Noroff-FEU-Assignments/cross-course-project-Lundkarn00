@@ -7,21 +7,34 @@
   <link rel="stylesheet" href=".github/css/styles.css">
   <script src="https://kit.fontawesome.com/b18cdd2ed6.js" crossorigin="anonymous"></script>
   <title>Gamehub | The Universe Of Games</title>
-</head>
-<body>
-  <header>
-    <img src=".github/images/logo.png" alt="Gamehub logo" class="logo">
+  <div class="header">
+    <a href="index.html"><img src=".github/images/logo.png" alt="Gamehub logo" class="logo"></a>
     <input type="checkbox" id="nav-toggle">
     <label for="nav-toggle" class="hamburger-icon"><i class="fas fa-bars"></i></label>
     <nav class="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-      </ul>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="search-bar">
+        <form action ="/search" method="GET">
+          <input type="search" name="q" placeholder="Search...">
+          <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="cart">
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="user">
+          <a href="#"><i class="fas fa-user"></i></a>
+      </div>
     </nav>
-  </header>
+  </div>
+</head>
+<body>
   <main>
     <section class="explore">
       <div class="explore-container">
@@ -29,8 +42,8 @@
         <a href="games.html" class="explore-cta">Explore more</a>
       </div>
     </section>
+    <h2 class="trending-title">Trending</h2>
     <section class="trending">
-      <h2>Trending</h2>
       <div class="slideshow-container">
         <img src=".github/images/assets/GameHub_covers.jpg" alt="Ping Pong" class="slide">
         <img src=".github/images/assets/GameHub_covers2.jpg" alt="Super Duper" class="slide">
@@ -44,19 +57,59 @@
       <h2>Weekly Giveaway</h2>
       <p>Enter our weekly giveaway by subscribing to our newsletter for a chance to win some awesome games!</p>
       <form action="submit.php" method="POST">
-        <input class="email-giveaway" type="email" name="email" placeholder="Email:" required>
+        <input class="email-giveaway" type="email" name="email" placeholder="Email:" autocomplete="email" required>
         <input type="submit" value="Subscribe" class="giveaway-cta">
       </form>
     </section>
   </main>
 </body>
 <footer>
-  <section class="logo-adress">
-    <img src=".github/images/logo.png" alt="Gamehub logo" class="logo-footer">
-    <p>Gamehub Inc.</p>
-    <p>909 Tully street</p>
-    <p>48219 Detroit, MI</p>
-  </section>
-  <p>Copyright &copy;</p>
+  <div class="footer-container">
+    <section class="logo-adress">
+      <img src=".github/images/logo.png" alt="Gamehub logo" class="logo-footer">
+      <p>Gamehub Inc.</p>
+      <p>909 Tully street</p>
+      <p>48219 Detroit, MI</p>
+    </section>
+    <section class="footer-gamehub">
+      <h3>Gamehub</h3>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </section>
+    <section class="footer-sellers">
+      <h3>For sellers</h3>
+      <ul>
+        <li><a href="#">How to sell</a></li>
+        <li><a href="#">Seller support</a></li>
+      </ul>
+    </section>
+    <section class="footer-terms">
+      <h3>User terms and privacy</h3>
+      <ul>
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Privacy and cookies</a></li>
+      </ul>
+    </section>
+    <section class="footer-cooperation">
+      <h3>Cooperation</h3>
+      <ul>
+        <li><a href="#">Affiliate program</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </section>
+    <section class="footer-social">
+      <h3>Follow us</h3>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+    </section>
+  </div>
+  <p class="copyright">Copyright &copy;</p>
 </footer>
 </html>
