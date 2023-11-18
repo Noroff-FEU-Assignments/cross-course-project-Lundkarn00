@@ -1250,6 +1250,10 @@ footer {
         text-decoration: none;
         color: #f9cccc;
     }
+
+    .prev, .next {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 600px) {
