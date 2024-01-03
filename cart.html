@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cart">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/b18cdd2ed6.js" crossorigin="anonymous"></script>
+    <title>Gamehub | Cart</title>
+    <div class="header">
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+      <div class="hamburger-menu">
+        <div class="hamburger-menu-slider" id="nav-slider">
+          <a href="index.html">Home</a>
+          <a href="games.html">Games</a>
+          <a href="about.html">About us</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Profile</a>
+        </div>
+      </div>
+      <a href="index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo"></a>
+      <nav class="nav-bar">
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <form action ="/search" method="GET">
+            <input type="search" name="q" placeholder="Search...">
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="cart">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="user">
+            <a href="#"><i class="fas fa-user"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </head>
+<body>
+  <h1 class="checkout-title">Checkout</h1>
+  <section class="checkout">
+    <div class="billing-info">
+      <h2>Billing information</h2>
+      <p>Email:</p>
+      <form action="submit.php" method="POST">
+        <input type="email" name="email" placeholder="Email:" class="billing-email" required>
+      </form>
+      <p>First name:</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="First name:" class="billing-name" required>
+      </form>
+      <p>Last name:</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="Last name:" class="billing-name" required>
+      </form>
+      <p>Street address:</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="address" placeholder="Street address:" class="billing-address" required>
+      </form>
+      <p>Post/Zip code:</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="zip" placeholder="Post/Zip code:" class="billing-zip" required>
+      </form>
+      <p>City:</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="city" placeholder="City:" class="billing-city" required>
+      </form>
+      <p>Country:</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="country" placeholder="Country:" class="billing-country" required>
+      </form>
+    </div>
+    <div class="payment">
+        <h2>Payment</h2>
+        <p>Card number:</p>
+        <form action="submit.php" method="POST">
+          <input type="text" name="card" placeholder="Card number:" class="payment-card" required>
+        </form>
+      <div class="card-details">
+        <form action="submit.php" method="POST">
+          <label for="payment-expiration">Expiration date:</label>
+          <input type="text" name="expiration" placeholder="Expiration date:" class="payment-expiration" required>
+        </form>
+        <form action="submit.php" method="POST">
+          <label for="payment-cvv">CVV:</label>
+          <input type="text" name="cvv" placeholder="CVV:" class="payment-cvv" required>
+        </form>
+      </div>
+    </div>
+    <div class="summary">
+      <h2 class="cart-title">Cart</h2>
+      <div class="checkout-cart">
+        <img src="/images/assets/GameHub_covers.jpg" alt="Ping Pong" class="checkout-cover">
+        <div class="checkout-info">
+          <h3>Ping Pong</h3>
+          <p>CD-Key</p>
+          <p>$29.99</p>
+        </div>
+      </div>
+      <div class="total">
+        <p>Total:</p>
+        <p>$29.99</p>
+      </div>
+      <div class="checkout-cta">
+        <a href="confirmation.html" class="checkout-btn">Checkout</a>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+    <div class="footer-container">
+      <section class="logo-adress">
+        <img src="/images/logo.png" alt="Gamehub logo" class="logo-footer">
+        <p>Gamehub Inc.</p>
+        <p>909 Tully street</p>
+        <p>48219 Detroit, MI</p>
+      </section>
+      <section class="footer-gamehub">
+        <h3>Gamehub</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </section>
+      <section class="footer-sellers">
+        <h3>For sellers</h3>
+        <ul>
+          <li><a href="#">How to sell</a></li>
+          <li><a href="#">Seller support</a></li>
+        </ul>
+      </section>
+      <section class="footer-terms">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Privacy and cookies</a></li>
+        </ul>
+      </section>
+      <section class="footer-cooperation">
+        <h3>Cooperation</h3>
+        <ul>
+          <li><a href="#">Affiliate program</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </section>
+      <section class="footer-social">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="copyright">&copy; Gamehub Inc.</p>
+  </footer>
+</html>
